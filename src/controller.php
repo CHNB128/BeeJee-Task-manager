@@ -19,6 +19,11 @@ class Controller
 
     public function invoke()
     {
+        ?>
+        <html lang="en" class="h-100">
+        <?php include 'view/head.php'; ?>
+        <body class="container h-100">
+        <?php
         switch ($_GET['page']) {
             case 'login':
                 include 'view/login/index.php';
@@ -66,5 +71,9 @@ class Controller
                 $this->showTaskList();
                 break;
         }
+        ?>
+        </body>
+        </html>
+        <?php
     }
 }
