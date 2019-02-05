@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "name": "beejee - Task manager",
+  "builds": [{ "src": "src/**/**/*.php", "use": "@now/php" }]
+}
